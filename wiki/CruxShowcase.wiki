@@ -1,13 +1,14 @@
-#summary One-sentence summary of this page.
 
 = Introduction =
 
-Add your content here.
+This project show how to use the Crux Framework components.
 
+== Compatibility ==
 
-= Details =
+* Crux Framework +5.1.0
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+== Install ==
+
+To install the showcase you need download two projects: cross-device-showcase and  showcase-core.
+
+Using Maven compile and install first the showcase-core then compile  cross-device-showcase.
