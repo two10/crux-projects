@@ -14,12 +14,14 @@ To install the showcase you need download three projects:
  * showcase-core
  * cross-device-showcase 
 
-1º - Download "crux-widgets" in version 5.1.0 (https://crux-framework.googlecode.com/svn/tags/components/crux-widgets/5.1.0). Using Maven compile and install.
+1º - Download "crux-widgets" from branches version 5.1 (https://crux-framework.googlecode.com/svn/branches/components/crux-widgets/5.1). 
 
-2º - Download "showcase-core" in the trunk (https://crux-projects.googlecode.com/svn/trunk/showcase-core). 
+2º - Using Maven compile and install crux-widgets .
 
-3º - Download "cross-device-showcase" in the trunk (https://crux-projects.googlecode.com/svn/trunk/cross-device-showcase). 
+3º - Download "showcase-core" from trunk (https://crux-projects.googlecode.com/svn/trunk/showcase-core). 
 
-4º - Using Maven compile and install in showcase-core.
+4º - Using Maven compile and install showcase-core.
 
-5º - Using Maven compile and install in cross-device-showcase.
+5º - Download "cross-device-showcase" from trunk (https://crux-projects.googlecode.com/svn/trunk/cross-device-showcase). 
+
+6º - Using Maven compile and install cross-device-showcase.
