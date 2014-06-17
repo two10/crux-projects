@@ -27,4 +27,4 @@ Now, you must download the Media Manager:
 
 Note: the Maven plugin can accuse some errors in this step, to resolve them right click on the project and go to Maven> Update Project.
 
-Note: The Media Manager already has configured two databases, HSQLDB and PostgreSQL. More information about switching between read README.
+Note: The Media Manager already has configured two databases, HSQLDB and PostgreSQL. More information to choose one of those options read the file: README-ConfigureDatabase .
