@@ -16,7 +16,7 @@ To install Media Manager you must have installed the crux-widget to do this:
 
  * Right-click the project and choose Run > install Maven
 
- * Right-click the project and choose Maven > Update Project
+Note: the Maven plugin can accuse some errors in this step, to resolve them right click on the project and go to Maven> Update Project.
 
 Now, you must download the Media Manager:
 
@@ -25,6 +25,6 @@ Now, you must download the Media Manager:
 
  * Right-click the project and choose Run > install Maven
 
- * Right-click the project and choose Maven > Update Project
+Note: the Maven plugin can accuse some errors in this step, to resolve them right click on the project and go to Maven> Update Project.
 
 Note: The Media Manager already has configured two databases, HSQLDB and PostgreSQL. More information about switching between read README.
