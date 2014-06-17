@@ -10,16 +10,7 @@ The Media Manager is a web application developed with Crux Framework. The idea o
 
 == Install ==
 
-To install Media Manager you must have installed the crux-widget, to do this: 
-
- * Do checkout the crux-widget in http://crux-framework.googlecode.com/svn/branches/components/crux-widgets/5.1
-
- * Right-click the project and choose Run > Maven install
-
-Note: the Maven plugin can accuse some errors in this step, to resolve them right click on the project and go to Maven> Update Project.
-
-Now, you must download the Media Manager:
-
+To install Media Manager you must: 
 
  * Do checkout the Media Manager in http://crux-projects.googlecode.com/svn/branches/mediamanager/1.0
 
