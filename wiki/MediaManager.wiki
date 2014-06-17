@@ -10,7 +10,7 @@ The Media Manager is a web application developed with Crux Framework. The idea o
 
 == Install ==
 
-To install Media Manager you must have installed the crux-widget to do this: 
+To install Media Manager you must have installed the crux-widget, to do this: 
 
  * Do checkout the crux-widget in http://crux-framework.googlecode.com/svn/branches/components/crux-widgets/5.1
 
