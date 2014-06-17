@@ -1,0 +1,14 @@
+= Media Manager =
+
+== Introduction ==
+
+The Media Manager is a web application developed with Crux Framework. The idea of this application is to use Crux to build a real project that can be used as example for new developers.
+
+== Compatibility ==
+
+* Crux Framework +5.1.0
+
+== Install ==
+
+To install the media manager you ...
+ 
