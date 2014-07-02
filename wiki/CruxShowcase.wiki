@@ -19,6 +19,6 @@ To install the showcase you need download two projects:
 
 2º - Using Maven compile and install showcase-core.
 
-3º - Download "cross-device-showcase" from trunk (https://crux-projects.googlecode.com/svn/branches/cross-device-showcase/1.0). 
+3º - Download "cross-device-showcase" from branch (https://crux-projects.googlecode.com/svn/branches/cross-device-showcase/1.0). 
 
 4º - Using Maven compile and install cross-device-showcase.
