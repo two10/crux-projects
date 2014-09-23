@@ -6,7 +6,7 @@ This project show how to use the Crux Framework components.
 
 == Compatibility ==
 
-* Crux Framework +5.1.2
+* Crux Framework +5.2.0
 
 == Install ==
 
