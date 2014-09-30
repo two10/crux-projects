@@ -13,7 +13,7 @@ The PhoneBook is a web application developed with Crux Framework. This applicati
  * Do check-out of the PhoneBook project in: http://crux-projects.googlecode.com/svn/trunk/phonebook
 
 == Running ==
-
+ * After check-out:
 1º - Locate the file Start CodeServer.launch, using the right mouse button and run it.
 
 2º - Locate the file Start Jetty.launch, using the right mouse button and run it.
