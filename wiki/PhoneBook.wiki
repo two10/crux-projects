@@ -19,3 +19,5 @@ The PhoneBook is a web application developed with Crux Framework. This applicati
  2º - Locate the file Start Jetty.launch, Using the right mouse button and run it.
 
 == Install ==
+
+ * After check-out of the project, using the right mouse button choose Run > Maven install
