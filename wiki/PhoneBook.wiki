@@ -2,14 +2,20 @@
 
 == Introduction ==
 
-The PhoneBook is a web application developed with Crux Framework. This application is a basic project able to perform search, add, update and delete operations.
+The PhoneBook is a web application developed with Crux Framework. This application is a basic project that can perform searches, addition, update and deleting of data.
 
 == Compatibility ==
 
  * Crux Framework +5.2.0
 
+== Checkout ==
+
+ * Do check-out of the PhoneBook project in: http://crux-projects.googlecode.com/svn/trunk/phonebook
+
+== Running ==
+
+ 1º - Locate the file Start CodeServer.launch, Using the right mouse button and run it.
+
+ 2º - Locate the file Start Jetty.launch, Using the right mouse button and run it.
+
 == Install ==
-
-To install PhoneBook you must: 
-
- * Do checkout the PhoneBook in http://crux-projects.googlecode.com/svn/trunk/phonebook
