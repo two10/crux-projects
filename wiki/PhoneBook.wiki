@@ -14,9 +14,9 @@ The PhoneBook is a web application developed with Crux Framework. This applicati
 
 == Running ==
 
- *1º - Locate the file Start CodeServer.launch, Using the right mouse button and run it.
+1º - Locate the file Start CodeServer.launch, Using the right mouse button and run it.
 
- *2º - Locate the file Start Jetty.launch, Using the right mouse button and run it.
+2º - Locate the file Start Jetty.launch, Using the right mouse button and run it.
 
 == Install ==
 
