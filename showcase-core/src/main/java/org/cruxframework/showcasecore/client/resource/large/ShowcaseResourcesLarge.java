@@ -29,7 +29,8 @@ import com.google.gwt.resources.client.ImageResource;
 @Resource(value="showcaseCoreResources", supportedDevices={Device.largeDisplayArrows, Device.largeDisplayMouse, Device.largeDisplayTouch})
 public interface ShowcaseResourcesLarge extends ShowcaseResourcesCommon
 {
-	@Source({"org/cruxframework/showcasecore/client/resource/common/cssShowcaseCommon.css", "cssShowcaseLarge.css"})
+	@Source({"org/cruxframework/showcasecore/client/resource/common/cssShowcaseCommon.css", "cssShowcaseLarge.css", 
+			 "org/cruxframework/showcasecore/client/resource/ie8/cssShowcaseLargeIe8.css"})
 	CssShowcaseLarge css();
 	
 	@Source("icon-layout.png")

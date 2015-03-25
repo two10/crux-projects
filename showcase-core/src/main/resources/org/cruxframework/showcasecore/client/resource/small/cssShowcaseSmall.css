@@ -532,7 +532,6 @@ body
 {
 	width:150px !important;
 	height:100px !important; 
-	background-size: 100% 100% !important;
 	margin:5px;
 }
 
@@ -540,7 +539,6 @@ body
 {
 	width:260px !important;
 	height:185px !important; 
-	background-size: 100% 100% !important;
 	margin:5px;
 }
 
@@ -548,7 +546,6 @@ body
 {
 	width:100px !important;
 	height:80px !important; 
-	background-size: 100% 100% !important;
 	margin:5px;
 	opacity:0.40;
 	-moz-opacity: 0.40;
@@ -1032,15 +1029,22 @@ body
 
 .slider-panel
 {
-	padding: 10px 10px;
-	height: 345px !important;
+/* 	padding: 10px 10px; */
+	padding-top: 10px;
+	padding-bottom: 5px !important; 
+	height: 360px !important;
 	overflow: hidden;
 }
 
 .slider-result-panel
 {
 	padding: 10px 10px;
-	height: 295px !important;
+	height: 298px !important;
+}
+
+.slider-button
+{
+	margin: 10px 0 !important;
 }
 
 .slider-page-title
