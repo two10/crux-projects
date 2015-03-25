@@ -10,23 +10,34 @@ public class MyDTO implements Serializable
 {
 	private static final long serialVersionUID = 1L;
 	
-	private String a;
-	private int b;
+	private String name;
+	private String password;
 	
-	public String getA() 
+	public MyDTO()
 	{
-		return a;
+		
 	}
-	public void setA(String a) 
+	
+	public MyDTO(String name, String password)
 	{
-		this.a = a;
+		this.name = name;
+		this.password = password;
 	}
-	public int getB() 
+	
+	public String getName() 
 	{
-		return b;
+		return name;
 	}
-	public void setB(int b) 
+	public void setName(String name) 
 	{
-		this.b = b;
+		this.name = name;
+	}
+	public String getPassword() 
+	{
+		return password;
+	}
+	public void setPassword(String password) 
+	{
+		this.password = password;
 	}
 }

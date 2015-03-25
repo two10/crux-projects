@@ -13,14 +13,14 @@
 	<center>
 		<!-- Component use sample -->
 		<crux:styledPanel id="panel1">
-			<gwt:HTMLPanel id="html">
+			<gwt:HTMLPanel id="html" styleName="center">
 				<crux:dateBox id="dateBox" pattern="dd/MM/yyyy" />
 				<faces:button id="buttonValueDateBox" onSelect="dateBoxController.onClickButtonValueTextBox" text="Print Value" />
 			</gwt:HTMLPanel>
 		</crux:styledPanel>
 
 		<!-- Component description -->
-		<showcase:info title="DateBox" library="Widgets" ie-version="7+">
+		<showcase:info title="DateBox" library="Widgets" ie-version="8+">
 			<showcase:description>
 				<gwt:HTML id="componentDescription" />
 			</showcase:description>

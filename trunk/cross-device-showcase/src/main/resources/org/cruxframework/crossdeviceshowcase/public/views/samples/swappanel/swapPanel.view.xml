@@ -64,7 +64,7 @@
 		</crux:styledPanel>	
 
 <!-- 		Component description -->
-		<showcase:info title="SwapPanel" library="SmartFaces" ie-version="9+">
+		<showcase:info title="SwapPanel" library="SmartFaces" ie-version="10+">
 			<showcase:description>
 				<gwt:HTML id="componentDescription" />
 			</showcase:description>

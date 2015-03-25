@@ -16,30 +16,23 @@
 			<gwt:HTMLPanel id="mainPanel" styleName="center">
 				<faces:label id="labelText" text="Enter a number"/>
 				<br />
-				<crux:numberTextBox id="boxNumber" maxLength="5"
-					value="44" />
+				<crux:numberTextBox id="boxNumber" maxLength="5" value="44" />
 				<hr />
 				<faces:label id="labelMaxlength" text="Choose the limit for entering the numbers"/>
 				<br />
 				<gwt:HTMLPanel id="panelBoard" styleName="radioPanel">
-					<crux:storyboard id="radios" height="20px" width="100%"
-						largeDeviceItemWidth="85px">
-						<gwt:radioButton id="radioButton09" name="value"
-							text="0 to 9" onChange="numberTextBoxController.maxLength"/>
-						<gwt:radioButton id="radioButton099" name="value"
-							text="0 to 99" onChange="numberTextBoxController.maxLength"/>
-						<gwt:radioButton id="radioButton0999" name="value"
-							text="0 to 999" checked="true"
-							onChange="numberTextBoxController.maxLength" />
-						<gwt:radioButton id="radioButtonFree" name="value"
-							text="Free" onChange="numberTextBoxController.maxLength"/>
+					<crux:storyboard id="radios" height="20px" width="100%" largeDeviceItemWidth="85px">
+						<gwt:radioButton id="radioButton09" name="value" text="0 to 9" onChange="numberTextBoxController.maxLength"/>
+						<gwt:radioButton id="radioButton099" name="value" text="0 to 99" onChange="numberTextBoxController.maxLength"/>
+						<gwt:radioButton id="radioButton0999" name="value" text="0 to 999" checked="true" onChange="numberTextBoxController.maxLength" />
+						<gwt:radioButton id="radioButtonFree" name="value" text="Free" onChange="numberTextBoxController.maxLength"/>
 					</crux:storyboard>
 				</gwt:HTMLPanel>
 			</gwt:HTMLPanel>
 		</crux:styledPanel>
 
 		<!-- 		Component description -->
-		<showcase:info title="NumberTextBox" library="Widgets" ie-version="7+">
+		<showcase:info title="NumberTextBox" library="Widgets" ie-version="8+">
 			<showcase:description>
 				<gwt:HTML id="componentDescription" />
 			</showcase:description>

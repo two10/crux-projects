@@ -14,7 +14,7 @@
 	<center>
 	<!-- 		Component use sample  -->
 		<crux:styledPanel id="mainWrapper">
-			<gwt:flowPanel id="wrapper">
+			<gwt:flowPanel id="wrapper" styleName="center">
 				<crux:adaptiveGrid id="grid" dataSource="countryDS" pageSize="7" styleName="grid" width="100%">
 					<crux:largeColumns>
 						<crux:widgetColumn key="flag" label="Flag">
@@ -30,15 +30,15 @@
 				 		</crux:widgetColumn>
 				 	</crux:smallColumns>
 				</crux:adaptiveGrid>
-				<gwt:HTMLPanel id="hr">
+				<gwt:HTMLPanel id="hr" styleName="center">
 					<hr />
 				</gwt:HTMLPanel>
-				<crux:randomPager id="pager" pageable="grid"/>
+					<crux:randomPager id="pager" pageable="grid" style="display: inline-block"/>
 			</gwt:flowPanel>
 		</crux:styledPanel>
 
 	<!-- 		Component description       -->
-		<showcase:info title="RandomPager" library="Widgets" ie-version="7+">
+		<showcase:info title="RandomPager" library="Widgets" ie-version="8+">
 			<showcase:description>
 				<gwt:HTML id="componentDescription"/>
 			</showcase:description>

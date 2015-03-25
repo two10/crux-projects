@@ -16,10 +16,10 @@
 			<gwt:flowPanel id="innerPanel">			
 				
 				<gwt:flowPanel id="topMenuDisposalPanel" styleName="faces-TopMenuDisposal simulate-screen">
-					<faces:topMenuDisposal id="topMenuDisposal">
-						<faces:view name="animals"/>
+					<faces:topMenuDisposal id="topMenuDisposal" historyControlPrefix="topview">
+						<faces:view name="animals" id="animals-top"/>
 						<faces:largeHeader>
-							<faces:label id="largeHeader" text="Animals" styleName="faces-label menu-disposal-title"/>
+							<faces:label id="largeHeader" text="Animals" autoHorizontalAlignment="center" styleName="faces-label menu-disposal-title"/>
 						</faces:largeHeader>
 						<faces:smallHeader>
 							<faces:label id="SmallHeader" text="Animals"/>
@@ -45,7 +45,7 @@
 				</gwt:flowPanel>	
 				
 <!-- 				Image representing the disposals -->
-				<gwt:flowPanel id="mobileDisposalPanel" visible="false">
+				<gwt:flowPanel id="mobileDisposalPanel" visible="false" styleName="center">
 					<faces:image id="topMenuDisposal_img" url="${showcaseCoreResources.topMenuDisposal}" styleName="faces-image mobileDisposal"/>
 				</gwt:flowPanel>
 					
@@ -53,7 +53,7 @@
 		</crux:styledPanel>
 		
 		<!-- 		Component description -->
-		<showcase:info title="TopMenuDisposal" library="SmartFaces" ie-version="9+">
+		<showcase:info title="TopMenuDisposal" library="SmartFaces" ie-version="10+">
 			<showcase:description>
 				<gwt:HTML id="componentDescription"/>
 			</showcase:description>

@@ -13,7 +13,7 @@
 	<center>
 		<!-- Component use sample -->
 		<crux:styledPanel id="panel">
-			<gwt:flowPanel id="flowPanel">
+			<gwt:flowPanel id="flowPanel" styleName="center">
 				<faces:label id="ipLabel" text="Enter a date:" style="margin:10px"/>
 				<crux:maskedTextBox id="dateInput" formatter="maskedDateFormatter" styleName="gwt-TextBox crux-MaskedTextBox dateInput smallWidthInput" />
 				<faces:button id="btnParseDate" onSelect="maskedTextBoxController.readDate" text="Check"/>
@@ -21,7 +21,7 @@
 		</crux:styledPanel>
 
 		<!-- Component description -->
-		<showcase:info title="MaskedTextBox" library="Widgets" ie-version="7+">
+		<showcase:info title="MaskedTextBox" library="Widgets" ie-version="8+">
 			<showcase:description>
 				<gwt:HTML id="componentDescription" />
 			</showcase:description>

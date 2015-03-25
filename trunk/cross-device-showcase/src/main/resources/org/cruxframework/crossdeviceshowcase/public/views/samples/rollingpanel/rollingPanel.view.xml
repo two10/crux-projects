@@ -12,10 +12,12 @@
 	title="RollingPanel"> 
 
 	<center>
-			<gwt:flowPanel id="innerPanel1" styleName="faces-StyledPanel block showcase-rollingPanel">
-<!-- 				Inserting image widgets to the RollingPanel component -->
+	
+		<crux:styledPanel id="imagesRollingPanel">
+			<gwt:flowPanel id="panel">
+				<!-- Inserting image widgets to the RollingPanel component -->
 				<faces:label id="label1" text="This is a Image RollingPanel" styleName="faces-Label margin-bottom"/>
-				<faces:rollingPanel id="rollingPanelImages" tooltip="Sports">
+				<faces:rollingPanel id="rollingPanelImages" tooltip="Sports" styleName="faces-RollingPanel showcase-RollingPanel" >
 					<faces:image id="baseball" url="${showcaseCoreResources.baseball}" styleName="faces-Image rollingPanel-image"/>
 					<faces:image id="basketball" url="${showcaseCoreResources.basketball}" styleName="faces-Image rollingPanel-image"/>
 					<faces:image id="canoeing" url="${showcaseCoreResources.canoeing}" styleName="faces-Image rollingPanel-image"/>
@@ -28,15 +30,18 @@
 					<faces:image id="volleyball" url="${showcaseCoreResources.volleyball}" styleName="faces-Image rollingPanel-image"/>
 				</faces:rollingPanel>
 			</gwt:flowPanel>
+		</crux:styledPanel>
 		
-		<gwt:flowPanel id="innerPanel2" styleName="faces-StyledPanel block showcase-rollingPanel">
-<!-- 				Inserting Personal widgets created to Sports Store for controller -->
-				<faces:label id="label2" text="This is a Customized Component RollingPanel" styleName="faces-Label margin-bottom"/>
-				<faces:rollingPanel id="rollingPanelCustomizedWidget" tooltip="Sports Store"/>
-		</gwt:flowPanel>
+		<crux:styledPanel id="customRollingPanel">
+			<gwt:flowPanel id="innerPanel">
+					<!-- 				Inserting Personal widgets created to Sports Store for controller -->
+					<faces:label id="label2" text="This is a Customized Component RollingPanel" styleName="faces-Label margin-bottom"/>
+					<faces:rollingPanel id="rollingPanelCustomizedWidget" tooltip="Sports Store"/>
+			</gwt:flowPanel>
+		</crux:styledPanel>
 		
 <!-- 		Component description -->
-		<showcase:info title="RollingPanel" library="SmartFaces" ie-version="9+">
+		<showcase:info title="RollingPanel" library="SmartFaces" ie-version="10+">
 			<showcase:description>
 				<gwt:HTML id="componentDescription" />
 			</showcase:description>

@@ -18,8 +18,8 @@
 					<crux:timer id="timer" initial="0" start="false"/>
 				</gwt:HTMLPanel>
 				<br />
-				<gwt:HTMLPanel id="panelButtons">
-					<gwt:horizontalPanel id="buttonsPanel">
+				<gwt:HTMLPanel id="panelButtons" styleName="center">
+					<gwt:horizontalPanel id="buttonsPanel" style="display: inline-block">
 						<faces:button id="buttonStart" text="Start" onSelect="timerController.start"/>
 						<faces:button id="buttonStop" text="Stop" onSelect="timerController.stopAndRestart"/>
 						<faces:button id="buttonClear" text="Clear" onSelect="timerController.clear"/>
@@ -29,7 +29,7 @@
 		</crux:styledPanel>
 
 		<!-- Component description -->
-		<showcase:info title="Timer" library="Widgets" ie-version="7+">
+		<showcase:info title="Timer" library="Widgets" ie-version="8+">
 			<showcase:description>
 				<gwt:HTML id="componentDescription" />
 			</showcase:description>
