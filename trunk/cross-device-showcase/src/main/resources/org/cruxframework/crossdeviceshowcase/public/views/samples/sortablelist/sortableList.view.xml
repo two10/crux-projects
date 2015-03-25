@@ -12,11 +12,11 @@
 
 	<center>
 		<crux:styledPanel id="panel">
-			<gwt:HTMLPanel id="innerPanel">
+			<gwt:HTMLPanel id="innerPanel" styleName="center">
 				<faces:label id="labelTitleText" text="Use the component sort buttons to reorder its tasks" styleName="faces-Label sortableList-item heading" />
 				<crux:sortableList id="sortableList" header="Tasks for the day">
 					<crux:itemWidget>
-						<faces:label id="label1" text="Check emails." />
+						<faces:label id="label1" text="Check emails." styleName="faces-Label sortableList-item"/>
 					</crux:itemWidget>
 					<crux:itemWidget>
 						<faces:label id="label2" text="Schedule meeting to budget revision." styleName="faces-Label sortableList-item" />
@@ -40,7 +40,7 @@
 		</crux:styledPanel>
 
 		<!-- Component description -->
-		<showcase:info title="SortableList" library="Widgets" ie-version="7+">
+		<showcase:info title="SortableList" library="Widgets" ie-version="8+">
 			<showcase:description>
 				<gwt:HTML id="componentDescription" />
 			</showcase:description>

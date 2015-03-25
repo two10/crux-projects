@@ -34,7 +34,7 @@
 		</crux:styledPanel>
 
 		<!-- Component description -->
-		<showcase:info title="DeviceAdaptiveGrid" library="Widgets" ie-version="7+">
+		<showcase:info title="DeviceAdaptiveGrid" library="Widgets" ie-version="8+">
 			<showcase:description>
 				<gwt:HTML id="componentDescription" />
 			</showcase:description>
