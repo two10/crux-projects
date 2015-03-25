@@ -12,8 +12,8 @@
 
 	<center>	
 		<crux:styledPanel id="mainPanel">
-			<gwt:flowPanel id="innerPanel">
-				<faces:menu id="menu" largeType="VerticalAccordion" smallType="VerticalAccordion" style="margin-bottom: 10px">
+			<gwt:flowPanel id="innerPanel" styleName="center">
+				<faces:menu id="menu" largeType="VerticalAccordion" smallType="VerticalAccordion" style="margin-bottom: 10px; display: inline-block">
 					<faces:item>
 						<faces:itemWidget>
 							<faces:label id="truck" text="Truck"/>
@@ -47,7 +47,7 @@
 		</crux:styledPanel>
 		
 <!-- 		Component description -->
-		<showcase:info title="Menu" library="SmartFaces" ie-version="9+">
+		<showcase:info title="Menu" library="SmartFaces" ie-version="10+">
 			<showcase:description>
 				<gwt:HTML id="componentDescription" />
 			</showcase:description>

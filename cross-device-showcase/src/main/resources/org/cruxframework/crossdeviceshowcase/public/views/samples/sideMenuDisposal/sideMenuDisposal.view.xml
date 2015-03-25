@@ -15,7 +15,7 @@
 		<crux:styledPanel id="mainPanel">
 			<gwt:flowPanel id="innerPanel">			
 <!-- 				panel to change menu type for sideMenuDisposal				 -->
-				<gwt:flowPanel id="typeMenuPanel" visible="true" style="margin-bottom: 10px;">
+				<gwt:flowPanel id="typeMenuPanel" visible="true" style="margin-bottom: 10px; text-align: center;">
 					<faces:label id="textMenu" text="Choose the menu type" style="margin-bottom: 10px;"/>
 					<gwt:listBox id="listMenuType" onChange="sideMenuDisposalController.changeMenuType">
 						<gwt:item label="Vertical Accordion" selected="true" value="verticalAccordion"/>
@@ -27,9 +27,9 @@
 				
 				<gwt:flowPanel id="sideMenuDisposalPanel" visible="true" styleName="faces-SideMenuDisposal simulate-screen">
 					<faces:sideMenuDisposal id="sideMenuDisposal">
-						<faces:view name="animals"/>
+						<faces:view name="animals" id="animals-side"/>
 						<faces:largeHeader>
-							<faces:label id="largeHeader" text="Animals" styleName="faces-label menu-disposal-title"/>
+							<faces:label id="largeHeader" text="Animals" autoHorizontalAlignment="center" styleName="faces-label menu-disposal-title"/>
 						</faces:largeHeader>
 						<faces:smallHeader>
 							<faces:label id="SmallHeader" text="Animals"/>
@@ -55,7 +55,7 @@
 				</gwt:flowPanel>
 				
 <!-- 				Image representing the disposals -->
-				<gwt:flowPanel id="mobileDisposalPanel" visible="false">
+				<gwt:flowPanel id="mobileDisposalPanel" visible="false" styleName="center">
 						<faces:image id="sideMenuDisposal_img"  url="${showcaseCoreResources.sideMenuDisposal}" styleName="faces-image mobileDisposal"/>
 				</gwt:flowPanel>
 				
@@ -63,7 +63,7 @@
 		</crux:styledPanel>
 		
 <!-- 		Component description -->
-		<showcase:info title="SideMenuDisposal" library="SmartFaces" ie-version="9+">
+		<showcase:info title="SideMenuDisposal" library="SmartFaces" ie-version="10+">
 			<showcase:description>
 				<gwt:HTML id="componentDescription" />
 			</showcase:description>

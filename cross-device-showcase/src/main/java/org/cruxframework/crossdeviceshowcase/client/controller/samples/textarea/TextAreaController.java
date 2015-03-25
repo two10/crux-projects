@@ -11,8 +11,8 @@ import org.cruxframework.crux.widgets.client.dialog.FlatMessageBox.MessageType;
 import org.cruxframework.crux.widgets.client.textarea.TextArea;
 
 import com.google.gwt.user.client.ui.HTML;
+import com.google.gwt.user.client.ui.RadioButton;
 import com.google.gwt.user.client.ui.TextBox;
-import com.google.gwt.user.client.ui.Widget;
 
 @Controller("textAreaController")
 public class TextAreaController 
@@ -25,6 +25,10 @@ public class TextAreaController
 
 	private String MESSAGE_INVALID_NUMBER;
 	private String MESSAGE_NEGATIVE_NUMBER;
+	private static final String SUCCESS = "success";
+	private static final String WARN = "warn";
+	private static final String ERROR = "error";
+	private static final String DEFAULT = "default";
 
 	@Expose
 	public void onLoad()
@@ -59,47 +63,50 @@ public class TextAreaController
 	{
 		return Integer.parseInt(myWidgetAccessor.textBox().getText());
 	}
+	
+	@Expose
+	public void setChosenStyle()
+	{
+		if (myWidgetAccessor.radioSuccess().getValue())
+		{
+			setState(SUCCESS);
+		} else if(myWidgetAccessor.radioWarning().getValue())
+		{
+			setState(WARN);
+		}else if(myWidgetAccessor.radioError().getValue())
+		{
+			setState(ERROR);
+		}else
+		{
+			setState(DEFAULT);
+		}
+	}
+	
+	@Expose
+	public void teste()
+	{
+		setState(ERROR);
+	}
+	
+	private void setState(String state)
+	{	
+		myWidgetAccessor.textArea().removeStyleName("success");
+		myWidgetAccessor.textArea().removeStyleName("warn");
+		myWidgetAccessor.textArea().removeStyleName("error");
+		myWidgetAccessor.textArea().setStyleName("gwt-TextArea " + state);
+	}
 
 	@BindView("textArea")
 	public static interface MyWidgetAccessor extends WidgetAccessor
 	{
 		TextArea textArea();
 		TextBox textBox();
+
+		RadioButton radioSuccess();
+		RadioButton radioWarning();
+		RadioButton radioError();
+		
 		HTML componentDescription();
-	}
-
-	private void setState(String state)
-	{	
-		Widget textarea = myWidgetAccessor.textArea();
-
-		textarea.removeStyleName("success");
-		textarea.removeStyleName("warn");
-		textarea.removeStyleName("error");
-		textarea.setStyleName("gwt-TextArea " + state);
-	}
-
-	@Expose
-	public void handleDefault()
-	{
-		this.setState("");
-	}
-
-	@Expose
-	public void handleSuccess()
-	{
-		this.setState("success");
-	}
-
-	@Expose
-	public void handleWarning()
-	{
-		this.setState("warn");
-	}
-
-	@Expose
-	public void handleError()
-	{
-		this.setState("error");
 	}
 
 	public void setMyWidgetAccessor(MyWidgetAccessor myWidgetAccessor) 

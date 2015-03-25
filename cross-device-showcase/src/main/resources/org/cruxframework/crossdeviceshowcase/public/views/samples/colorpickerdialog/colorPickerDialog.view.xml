@@ -23,7 +23,7 @@
 		<crux:colorPickerDialog id="colorPicker" text="Choose color" onClose="colorPickerDialogController.changeColor"/>
 
 		<!-- Component description -->
-		<showcase:info title="ColorPicker" library="Widgets" ie-version="7+">
+		<showcase:info title="ColorPicker" library="Widgets" ie-version="8+">
 			<showcase:description>
 				<gwt:HTML id="componentDescription" />
 			</showcase:description>

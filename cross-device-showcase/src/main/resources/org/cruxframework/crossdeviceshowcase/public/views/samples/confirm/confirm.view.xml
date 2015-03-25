@@ -12,7 +12,7 @@
 
 	<center>
 		<crux:styledPanel id="mainPanel">
-			<gwt:flowPanel id="innerPanel">
+			<gwt:flowPanel id="innerPanel" styleName="center">
 				<faces:label id="labelName" styleName="faces-Label confirm-label" />
 				<gwt:flowPanel id="formWrapper" styleName="faces--group">
 					<gwt:textBox id="textBoxName" placeHolder="Insert your name here" />
@@ -25,7 +25,7 @@
 			onOk="confirmController.launchAction" message="Are you sure that want send your name?" />
 
 		<!-- Component description -->
-		<showcase:info title="Confirm" library="SmartFaces" ie-version="9+">
+		<showcase:info title="Confirm" library="SmartFaces" ie-version="10+">
 			<showcase:description>
 				<gwt:HTML id="componentDescription" />
 			</showcase:description>

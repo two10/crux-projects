@@ -6,8 +6,8 @@ import org.cruxframework.crux.core.client.controller.Expose;
 import org.cruxframework.crux.core.client.ioc.Inject;
 import org.cruxframework.crux.core.client.screen.views.BindView;
 import org.cruxframework.crux.core.client.screen.views.WidgetAccessor;
+import org.cruxframework.crux.smartfaces.client.image.Image;
 import org.cruxframework.crux.smartfaces.client.label.Label;
-import org.cruxframework.crux.widgets.client.image.Image;
 
 import com.google.gwt.user.client.ui.HTML;
 
@@ -54,9 +54,9 @@ public class ImageController
 	{
 		myWidgetAccessor.labelInformImage().setText(MESSAGE_COLOSSEUM_TEXT);
 		myWidgetAccessor.labelTitleImage().setText(MESSAGE_COLOSSEUM_TITLE);
-		myWidgetAccessor.colosseum().setStyleName("imageBig");
-		myWidgetAccessor.tower().setStyleName("imageSmall");
-		myWidgetAccessor.statue().setStyleName("imageSmall");
+		myWidgetAccessor.colosseum().setStyleName("faces-Image imageBig");
+		myWidgetAccessor.tower().setStyleName("faces-Image imageSmall");
+		myWidgetAccessor.statue().setStyleName("faces-Image imageSmall");
 	}
 		
 	@Expose
@@ -64,9 +64,9 @@ public class ImageController
 	{
 		myWidgetAccessor.labelInformImage().setText(MESSAGE_TOWER_TEXT);
 		myWidgetAccessor.labelTitleImage().setText(MESSAGE_TOWER_TITLE);
-		myWidgetAccessor.tower().setStyleName("imageBig");
-		myWidgetAccessor.colosseum().setStyleName("imageSmall");
-		myWidgetAccessor.statue().setStyleName("imageSmall");
+		myWidgetAccessor.tower().setStyleName("faces-Image imageBig");
+		myWidgetAccessor.colosseum().setStyleName("faces-Image imageSmall");
+		myWidgetAccessor.statue().setStyleName("faces-Image imageSmall");
 	}
 	
 	@Expose
@@ -74,9 +74,9 @@ public class ImageController
 	{
 		myWidgetAccessor.labelInformImage().setText(MESSAGE_STATUE_TEXT);
 		myWidgetAccessor.labelTitleImage().setText(MESSAGE_STATUE_TITLE);
-		myWidgetAccessor.statue().setStyleName("imageBig");
-		myWidgetAccessor.colosseum().setStyleName("imageSmall");
-		myWidgetAccessor.tower().setStyleName("imageSmall");
+		myWidgetAccessor.statue().setStyleName("faces-Image imageBig");
+		myWidgetAccessor.colosseum().setStyleName("faces-Image imageSmall");
+		myWidgetAccessor.tower().setStyleName("faces-Image imageSmall");
 	}
 	
 	@BindView("image")

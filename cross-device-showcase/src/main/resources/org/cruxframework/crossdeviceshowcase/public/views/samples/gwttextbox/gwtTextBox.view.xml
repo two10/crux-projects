@@ -28,7 +28,7 @@
 		</crux:styledPanel>
 
 		<!-- Component description -->
-		<showcase:info title="TextBox" library="GWT" ie-version="7+">
+		<showcase:info title="TextBox" library="GWT" ie-version="8+">
 			<showcase:description>
 				<gwt:HTML id="componentDescription" />
 			</showcase:description>

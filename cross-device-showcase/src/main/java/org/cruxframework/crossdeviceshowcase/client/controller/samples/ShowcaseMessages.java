@@ -36,7 +36,7 @@ public interface ShowcaseMessages extends Messages
 	@DefaultMessage("Componentes que possuem implementações compatíveis com browsers antigos.")
 	String widgetText();
 	
-	@DefaultMessage("Biblioteca:")
+	@DefaultMessage("Biblioteca: ")
 	String library();
 	
 	@DefaultMessage("Browsers compatíveis:")
@@ -59,6 +59,9 @@ public interface ShowcaseMessages extends Messages
 
 	@DefaultMessage("Menus e Listas")
 	String menusAndLists();
+	
+	@DefaultMessage("Funcionalidades Lógicas")
+	String logicalFeatures();
 	
 	@DefaultMessage("Database não suportada")
 	String databaseNotSupportedError();

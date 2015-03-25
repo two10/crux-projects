@@ -20,23 +20,31 @@
 				  largeViewport="user-scalable=no, width=device-width, height=device-height" 
 				  useResource="xStandardResources,showcaseCoreResources,smartFacesResources" height="100%"
 				  onLoad="mainController.wellcome"/>
-
+			
 		<crux:menuTabsDisposal id="menuDisposal" >
 			<crux:header>
-				<gwt:flowPanel id="topBarpanel">
-					<gwt:label text="${messages_showcase.shortWelcome}" id="activeViewPage" styleName="activeView"></gwt:label>
-
-					<faces:selectablePanel id="langTogglerSelector" styleName="topBarIcon sm-lang-wrapper" onSelect="mainController.switchLocaleUrl">
-						<gwt:flowPanel id="langTogglerWrapper" styleName="lang-toggler-wrapper flex">
-							<faces:label id="langEn" text="EN" styleName="lang-toggler-label active" />
-								<gwt:flowPanel id="langToggler" styleName="lang-toggler"></gwt:flowPanel>
-							<faces:label id="langPt" text="PT" styleName="lang-toggler-label" />
+				<gwt:flowPanel id="headerPanel">
+					
+						<gwt:flowPanel id="filterPanel"> 
+							<crux:filter id="filter" text="Search here" animationEnabled="true" 
+								autoSelectEnabled="true" focus="true" width="200px" height="29px" style="margin-right: 350px; margin-top: 1px;"  limit="2">
+							</crux:filter>
 						</gwt:flowPanel>
-					</faces:selectablePanel>
-					
-					<crux:button id="siteButton" text="${messages_showcase.site}" onSelect="mainController.navigateToSite" styleName="topBarIcon siteIcon"/>
-					<crux:button id="projectButton" text="${messages_showcase.project}" onSelect="mainController.navigateToProject" styleName="topBarIcon projectIcon"/>
-					
+				
+						<gwt:flowPanel id="topBarpanel">
+							<gwt:label text="${messages_showcase.shortWelcome}" id="activeViewPage" styleName="activeView"></gwt:label>
+							<faces:selectablePanel id="langTogglerSelector" styleName="topBarIcon sm-lang-wrapper" onSelect="mainController.switchLocaleUrl">
+								<gwt:flowPanel id="langTogglerWrapper" styleName="lang-toggler-wrapper flex">
+									<faces:label id="langEn" text="EN" styleName="lang-toggler-label active" />
+										<gwt:flowPanel id="langToggler" styleName="lang-toggler"/>
+									<faces:label id="langPt" text="PT" styleName="lang-toggler-label" />
+								</gwt:flowPanel>
+							</faces:selectablePanel>
+							
+							<crux:button id="siteButton" text="${messages_showcase.site}" onSelect="mainController.navigateToSite" styleName="topBarIcon siteIcon"/>
+							<crux:button id="projectButton" text="${messages_showcase.project}" onSelect="mainController.navigateToProject" styleName="topBarIcon projectIcon"/>				
+						</gwt:flowPanel>
+				
 				</gwt:flowPanel>
 			</crux:header>
 			
@@ -88,7 +96,11 @@
 			<crux:menuEntry label="ScrollBanner" targetView="scrollBanner"/>
 			<crux:menuEntry label="Timer" targetView="timer"/>
 			
-<!-- 			<crux:menuSection label="${messages_showcase.miscellaneousElements}" /> -->		
+			<crux:menuSection label="${messages_showcase.logicalFeatures}"/>
+			<crux:menuEntry label="I18N" targetView="i18n"/>
+			<crux:menuEntry label="Rest Communication" targetView="rest"/>
+			
+<!-- 			<crux:menuSection label="${messages_showcase.miscellaneousElements}" />		 -->
 <!-- 			<crux:menuSection label="News" /> -->
 <!-- 			<crux:menuEntry label="SwapPanel" targetView="swapPanel"/> -->
 <!-- 			<crux:menuEntry label="SwapViewContainer" targetView="swapViewContainer"/> -->

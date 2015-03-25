@@ -8,5 +8,7 @@ import org.cruxframework.crux.core.client.rest.RestProxy.TargetRestService;
 @TargetRestService("myRestService")
 public interface MyRestProxy extends RestProxy
 {
-	void myRestCall(String param1, int param2, Callback<MyDTO> callback);
+	void validate(String name, String password, Callback<MyDTO> callback);
+	
+	void save(String name, String password, Callback<Void> callback);
 }

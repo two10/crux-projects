@@ -14,7 +14,7 @@
 
 	<center>
 		<crux:styledPanel id="mainPanel">
-			<gwt:flowPanel id="wrapper">
+			<gwt:flowPanel id="wrapper" styleName="center">
 				<crux:adaptiveGrid id="grid" dataSource="discDS" pageSize="5" styleName="grid" width="100%">
 					<crux:largeColumns>
 						<crux:widgetColumn key="type" label="Type" width="70px">
@@ -32,12 +32,12 @@
 				<gwt:HTMLPanel id="hr">
 					<hr />
 				</gwt:HTMLPanel>
-				<crux:sequentialPager id="sequentialPager" pageable="grid"/>
+				<crux:sequentialPager id="sequentialPager" pageable="grid" style="display: inline-block"/>
 			</gwt:flowPanel>
 		</crux:styledPanel>
 		
 		<!-- 		Component description       -->
-		<showcase:info title="SequentialPager" library="Widgets" ie-version="7+">
+		<showcase:info title="SequentialPager" library="Widgets" ie-version="8+">
 			<showcase:description>
 				<gwt:HTML id="componentDescription"/>
 			</showcase:description>
