@@ -46,9 +46,10 @@ pre code *, pre code span
 
 .textLibrary
 {
-	color: #000000;
+		color: #000000;
     font-size: 15px;
     margin-bottom: 5px;
+    margin-right: 4px;
 }
 
 .textBrowser
@@ -68,10 +69,9 @@ pre code *, pre code span
 {
 	margin: 0px 10px;
 	vertical-align: middle;
-	height: 27px !important;
-	width: 27px !important;
-	background-size: 100% !important;
-	
+/* 	height: 27px !important; */
+/* 	width: 27px !important; */
+/* 	background-size: 100% !important; */
 }
 .center, .buttonsPanel
 {
@@ -211,14 +211,18 @@ pre code *, pre code span
 
 .ie-version
 {
-	background-color:white;
-	width:19px;
-	height:19px;
+	right: -8px;
+  top: -5px;
+  width: 25px;
+  height: 15px;
+
+/* 	width:19px; */
+/* 	height:19px; */
 	text-align:center;
 	border-radius:24px;
 	position:absolute;
-	right:-4px;
-	top:-4px;
+/* 	right:-4px; */
+/* 	top:-4px; */
 	background:red;
 	color:white;
 	font-weight:bold;

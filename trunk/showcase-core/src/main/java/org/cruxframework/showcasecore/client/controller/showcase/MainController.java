@@ -1,5 +1,6 @@
 package org.cruxframework.showcasecore.client.controller.showcase;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.cruxframework.crux.core.client.controller.Controller;
@@ -9,16 +10,27 @@ import org.cruxframework.crux.core.client.screen.Screen;
 import org.cruxframework.crux.core.client.screen.views.View;
 import org.cruxframework.crux.core.client.screen.views.ViewActivateEvent;
 import org.cruxframework.crux.core.client.screen.views.ViewActivateHandler;
+import org.cruxframework.crux.smartfaces.client.button.Button;
 import org.cruxframework.crux.widgets.client.dialogcontainer.DialogViewContainer;
 import org.cruxframework.crux.widgets.client.disposal.menutabsdisposal.MenuTabsDisposal;
 import org.cruxframework.crux.widgets.client.disposal.panelchoicedisposal.PanelChoiceDisposal;
+import org.cruxframework.crux.widgets.client.event.SelectEvent;
+import org.cruxframework.crux.widgets.client.event.SelectHandler;
+import org.cruxframework.crux.widgets.client.filter.Filter;
+import org.cruxframework.crux.widgets.client.filter.Filterable;
 import org.cruxframework.crux.widgets.client.swappanel.HorizontalSwapPanel.Direction;
 import org.cruxframework.showcasecore.client.remote.showcase.SVNServiceAsync;
 import org.cruxframework.showcasecore.client.resource.common.ShowcaseResourcesCommon;
 
+import com.gargoylesoftware.htmlunit.protocol.javascript.Handler;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
+import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.event.logical.shared.AttachEvent;
+import com.google.gwt.event.shared.HandlerManager;
+import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
 import com.google.gwt.user.client.Element;
 import com.google.gwt.user.client.Window;
@@ -104,11 +116,52 @@ public class MainController
 	@Expose
 	public void wellcome()
 	{
-		MenuTabsDisposal menuDisposal = (MenuTabsDisposal) Screen.get("menuDisposal");
+		final MenuTabsDisposal menuDisposal = (MenuTabsDisposal) Screen.get("menuDisposal");
 		menuDisposal.showView("wellcome", Direction.FORWARD);
 		
 		//Call method to verify browser language
 		verifyAndToggleLanguage();
+		
+		final Filter filter = (Filter) Screen.get("filter");
+		
+		filter.setFilterable(new Filterable<String>()
+				{
+
+			@Override
+			public List<FilterResult<String>> filter(String query) 
+			{	
+				List<FilterResult<String>> widgetList = new ArrayList<FilterResult<String>>();
+				widgetList.add(new FilterResult<String>("cruxButton", "Button", "button"));
+				widgetList.add(new FilterResult<String>("filter", "Filter", "filter"));
+				widgetList.add(new FilterResult<String>("image", "Imagem", "imagem"));
+				widgetList.add(new FilterResult<String>("slider", "Slide", "slide"));
+				widgetList.add(new FilterResult<String>("rollingPanel", "RollinPanel", "RollinPanel"));
+				widgetList.add(new FilterResult<String>("adaptiveGrid", "Grid", "grid"));
+				widgetList.add(new FilterResult<String>("randomPager", "RandomPager", "randomPager"));
+				
+				
+				List<FilterResult<String>> result = new ArrayList<FilterResult<String>>();
+				
+				for (FilterResult<String> filterResult : widgetList) 
+				{
+					if(filterResult.getLabel().toLowerCase().contains(query.toLowerCase()))
+					{
+						result.add(filterResult);
+					}
+				}
+
+				return result;
+			}
+
+			@Override
+			public void onSelectItem(String selectedItem)
+			{
+				menuDisposal.showView(selectedItem, null);
+				filter.setText("");
+			}
+			
+		});
+				
 	}
 	
 	@Expose
