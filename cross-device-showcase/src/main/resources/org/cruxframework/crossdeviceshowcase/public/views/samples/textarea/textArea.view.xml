@@ -33,16 +33,16 @@
 					<faces:label id="h4" text="States" />
 				</h4>
 				<div class="btn-Group">
-					<gwt:radioButton name="color" onChange="textAreaController.handleDefault" id="radioDefault" text="Default" checked="true"/>
-					<gwt:radioButton name="color" onChange="textAreaController.handleSuccess" id="radioSuccess" text="Success"/>
-					<gwt:radioButton name="color" onChange="textAreaController.handleWarning" id="radioWarning" text="Warning"/>
-					<gwt:radioButton name="color" onChange="textAreaController.handleError" id="radioError" text="Error"/>
+					<gwt:radioButton name="color" id="radioDefault" text="Default" onChange="textAreaController.setChosenStyle" checked="true"/>
+					<gwt:radioButton name="color" id="radioSuccess" text="Success" onChange="textAreaController.setChosenStyle"/>
+					<gwt:radioButton name="color" id="radioWarning" text="Warning" onChange="textAreaController.setChosenStyle"/>
+					<gwt:radioButton name="color" id="radioError" text="Error" onChange="textAreaController.setChosenStyle"/>
 				</div>
 			</gwt:HTMLPanel>
 		</crux:styledPanel>
 
 		<!-- Component description -->
-		<showcase:info title="TextArea" library="Widgets" ie-version="7+">
+		<showcase:info title="TextArea" library="Widgets" ie-version="8+">
 			<showcase:description>
 				<gwt:HTML id="componentDescription" />
 			</showcase:description>
