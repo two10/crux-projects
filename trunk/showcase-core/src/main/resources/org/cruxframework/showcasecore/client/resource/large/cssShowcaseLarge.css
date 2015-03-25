@@ -8,9 +8,9 @@
 @url banner1promoUrl banner1promo;
 @url banner1promoUr2 banner1promo;
 @url banner1promoUr3 banner1promo;
-@url imageColiseuUrl coliseu;
-@url imageEiffelUrl eiffel;
-@url imageLibertyUrl liberty;
+@url image1ImageUrl image1Image;
+@url image2ImageUrl image2Image;
+@url image3ImageUrl image3Image;
 @url guileUrl guile;
 @url logoLargeUrl logoLarge;
 @url noiseUrl noise;
@@ -523,34 +523,77 @@ body
 	width:540px;
 }
 
-/* Image */
-.imageNormal
+.imageStyleNormal1, .imageStyleNormal2, .imageStyleNormal3
 {
 	width:280px !important;
 	height:220px !important; 
-	background-size: 100% 100% !important;
+	background-size: 100% 100%;
 	margin:5px;
 }
 
-.imageBig
+.imageStyleNormal1
+{
+	background-image: image1ImageUrl;
+}
+
+.imageStyleNormal2
+{
+	background-image: image2ImageUrl;
+}
+
+.imageStyleNormal3
+{
+	background-image: image3ImageUrl;
+}
+
+.imageStyleBig1, .imageStyleBig2, .imageStyleBig3
 {
 	width:350px !important;
 	height:270px !important; 
-	background-size: 100% 100% !important;
+	background-size: 100% 100%;
 	margin:5px;
 }
 
-.imageSmall
+.imageStyleBig1
+{
+	background-image: image1ImageUrl;
+}
+
+.imageStyleBig2
+{
+	background-image: image2ImageUrl;
+}
+
+.imageStyleBig3
+{
+	background-image: image3ImageUrl;
+}
+
+.imageStyleSmall1, .imageStyleSmall2, .imageStyleSmall3
 {
 	width:280px !important;
 	height:220px !important; 
-	background-size: 100% 100% !important;
+	background-size: 100% 100%;
 	margin:5px;
 	opacity:0.40;
 	-moz-opacity: 0.40;
 	filter: alpha(opacity\=40);
 }
 
+.imageStyleSmall1
+{
+	background-image: image1ImageUrl;
+}
+
+.imageStyleSmall2
+{
+	background-image: image2ImageUrl;
+}
+
+.imageStyleSmall3
+{
+	background-image: image3ImageUrl;
+}
 
 .imagelabelInformImage
 {
@@ -883,16 +926,15 @@ body
 /* Disposal */
 .disposal-views-title
 {
-	font-size: 20px;
-	margin-bottom: 15px;
+	font-size:20px;
+	margin:15px 0;
 }
 
 .disposal-image
 {
 	width: 700px !important;
-	height: 527px !important;
-	border: solid 4px #0b5a15;
-	border-radius: 15px;
+	height: 185px !important;
+	border-radius: 5px;
 	background-size: 100% !important;
 }
 
@@ -900,7 +942,6 @@ body
 {
 	width: 700px;
 	text-align: justify;
-	color: rgb(11, 90, 21);
 }
 
 .disposal-title
@@ -976,12 +1017,9 @@ body
 {
 	height: 230px;
 	width: 200px;
-	border: solid 2px white;
-	margin: 0px 0.5px;
+	border: 1px solid #ccc;
+	margin: 0px -1px 0 0;
 	background-color: #eee;
-	border-radius: 10px;
-	border-bottom: solid 3px #c8c8c8;
-	border-right: solid 3px #c8c8c8;
 	overflow: hidden;
 }
 
