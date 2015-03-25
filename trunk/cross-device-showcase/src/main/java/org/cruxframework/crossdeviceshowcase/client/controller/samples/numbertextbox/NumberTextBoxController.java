@@ -51,7 +51,7 @@ public class NumberTextBoxController
 			return 3;
 		}else
 		{
-			return 524288;
+			return Integer.MAX_VALUE;
 		}
 	}
 	

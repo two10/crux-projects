@@ -31,16 +31,16 @@ public class FilterController
 		/* Insert the component description*/
 		myWidgetAccessor.componentDescription().setHTML(componentDescription.filterDescription());
 		
-		myWidgetAccessor.filterWidget().setFilterable(new Filterable<String>() {
-			
+		myWidgetAccessor.filterWidget().setFilterable(new Filterable<String>() 
+		{		
 			@Override
 			public void onSelectItem(String selectedItem) {
 				FlatMessageBox.show("Suggested word selected.", MessageType.SUCCESS);
 			}
 			
 			@Override
-			public List<FilterResult<String>> filter(String query) {
-				
+			public List<FilterResult<String>> filter(String query) 
+			{	
 				List<String> wordList = new ArrayList<String>();
 				wordList.add("Airplane"); 
 				wordList.add("Airship");
