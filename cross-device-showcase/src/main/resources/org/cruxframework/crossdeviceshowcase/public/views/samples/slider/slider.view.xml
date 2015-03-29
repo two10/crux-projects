@@ -12,7 +12,7 @@
 	
 	<crux:styledPanel id="mainPanel">
 		<gwt:flowPanel id="innerPanel" styleName="center">
-    		<crux:slider id="slider" styleName="crux-Slider showcase-slider">
+    		<crux:slider id="slider" styleName="crux-Slider showcase-slider" height="300px">
 <!--     		WELCOME -->
     			<crux:widget>
     				<gwt:flowPanel id="welcomePanel" styleName="slider-panel center">
